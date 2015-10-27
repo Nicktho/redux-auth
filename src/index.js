@@ -18,6 +18,12 @@ export function authReducer(state = initialState, action) {
   }
 }
 
+export function withToken(fn) {
+  return {
+    withToken: fn
+  };
+}
+
 export default store => next => action => {
   if (!action.withToken) return next(action);
 
