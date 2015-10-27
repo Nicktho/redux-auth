@@ -1,0 +1,26 @@
+{
+  "name": "redux-auth",
+  "version": "0.0.1",
+  "description": "A simple redux middleware for JWT based authorization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nicktho/redux-auth.git"
+  },
+  "keywords": [
+    "redux",
+    "auth",
+    "redux-auth",
+    "authorization",
+    "middleware"
+  ],
+  "author": "Nick Matenaar <matenaar92@gmail.com> (http://nickmatenaar.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Nicktho/redux-auth/issues"
+  },
+  "homepage": "https://github.com/Nicktho/redux-auth"
+}
