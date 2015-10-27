@@ -13,7 +13,7 @@ import thunk from 'redux-thunk';
 import auth from 'redux-auth';
 import reducer from '../reducers';
 
-const applyStore = applyMiddleware(thunk, )(createStore);
+const applyStore = applyMiddleware(thunk, auth)(createStore);
 
 export default function configureStore(state) {
   const store = applyStore(reducer, state);
