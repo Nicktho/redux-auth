@@ -52,6 +52,8 @@ export function login(email, password) {
 Use the `withAuth()` helper in any action creator to get access to your token
 
 ```
+import { withToken } from 'redux-auth';
+
 export function addTodo(todo) {
   return withToken(token => dispatch => {
     todoApi.post({ todo }, token)
