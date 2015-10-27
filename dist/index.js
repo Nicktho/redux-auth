@@ -4,7 +4,8 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 exports.updateToken = updateToken;
-exports.authReducer = authReducer;
+exports.tokenReducer = tokenReducer;
+exports.withToken = withToken;
 var UPDATE_TOKEN = 'auth/UPDATE_TOKEN';
 
 exports.UPDATE_TOKEN = UPDATE_TOKEN;
@@ -17,7 +18,7 @@ var initialState = {
   token: ''
 };
 
-function authReducer(state, action) {
+function tokenReducer(state, action) {
   if (state === undefined) state = initialState;
   var token = action.token;
   var type = action.type;
@@ -28,6 +29,12 @@ function authReducer(state, action) {
     default:
       return state;
   }
+}
+
+function withToken(fn) {
+  return {
+    withToken: fn
+  };
 }
 
 exports['default'] = function (store) {
