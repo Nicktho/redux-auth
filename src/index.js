@@ -8,7 +8,7 @@ const initialState = {
   token: ''
 };
 
-export function authReducer(state = initialState, action) {
+export function tokenReducer(state = initialState, action) {
   const { token, type } = action;
   switch (type) {
   case UPDATE_TOKEN:
