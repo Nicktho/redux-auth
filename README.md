@@ -49,7 +49,7 @@ export function login(email, password) {
 }
 ```
 
-Use the `withAuth()` helper in any action creator to get access to your token
+Use the `withToken()` helper in any action creator to get access to your token
 
 ```
 import { withToken } from 'redux-auth';
