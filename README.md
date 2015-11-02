@@ -3,6 +3,10 @@ A simple redux middleware for JWT based authorization
 
 Works with any async store middleware.
 
+## Note:
+
+This project is a work in progress and currently in a very early stage. Updates will be coming soon along with a general roadmap of future features. 
+
 ## How to use:
 
 Add the `auth` middleware where you create your store
